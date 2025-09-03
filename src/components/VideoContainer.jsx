@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import useVideoContainer from "../hooks/useVideoContainer";
 import { Link } from "react-router-dom";
 
-
 const VideoContainer = () => {
   useVideoContainer();
   const videos = useSelector((store) => store.card.videos);
@@ -12,7 +11,7 @@ const VideoContainer = () => {
   return (
     <div className="flex flex-wrap">
       {videos.map((video) => (
-        <Link to={"/watch"} key={video.id}>
+        <Link to={"/watch?v=" + video.id} key={video.id}>
           <VideoCard info={video} />
         </Link>
       ))}

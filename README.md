@@ -10,6 +10,9 @@
 - Then Create an utils folder and make constants file
 - put some links inside the constants.js file
 - Fetch the data thorugh the API
+- Fetch an API of Youtube Suggestion
+- Introduce the concept of bouncing and debouncing in searchbar
+- 
 
 
 
@@ -22,5 +25,5 @@
     - MainContainer
         - ButtonList
         - VideoContainer
-            - VideoCard * N
-                - WebPage (After the pressing of it)
+            - VideoCard * N (After pressing on VideoCard then we'll go at Webpage)
+                - WebPage
